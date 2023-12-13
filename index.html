@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+   <div class="container-wrapper">
+    <div class="container">
+        <div class="row">
+           <div class="col">
+           
+            <p id="quizText"> Quiz <br> <span id="app">Application</span></p>
+           
+            <!-- FORM  -->
+            <form class="signUpForm" onsubmit="signUp(event)">
+                <div class="mb-3">
+                  <label for="exampleInputName" class="form-label">Name: </label>
+                  <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder=" Muhammad Ali" autocomplete="off">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail" class="form-label">Email address: </label>
+                  <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder=" Ali@gmail.com " autocomplete="off">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <input type="password" class="form-control" id="password" placeholder=" Abc@12345" autocomplete="off"  >
+                  <label for="password" class="form-label " >Password: </label>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input " id="exampleCheck1" onclick="showPassword()" >
+                  <label class="form-check-label showAndHidePass" for="exampleCheck1 ">SHOW PASSWORD</label>
+                </div>
+                <button type="submit" class="btn btn-primary" id="registerBtn">Register</button>
+                <span id="redirectToSignIn">Already have an account? <span onclick="signInLink()">Sign In</span></span>
+            </form>
+
+           </div>
+        </div>
+    </div>
+   </div>
+  
+
+   
+
+</head>
+<body>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

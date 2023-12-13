@@ -1,0 +1,485 @@
+.container-wrapper{
+    /* border: 1px solid red; */
+    background-color: #497a7b;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signUpForm{
+    /* border: 1px solid red; */
+    /* padding: 4rem; */
+    border-radius: 1rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+}
+#quizLogo{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1;
+    display: block;
+    margin-bottom: 1rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+#quizText{
+    font-family: fantasy;
+    background-color:white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1;
+    display: block;
+    margin-bottom: 1rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3rem;
+    color: #1f4445;
+    transform: translateY(15px);
+    cursor: pointer;
+}
+#app{
+    font-size: 1rem;
+    padding: 0rem;
+    position: relative;
+    left: 10%;
+    right: 0%;
+    top: -5%;
+    color: #F8C660;
+    font-family: fangsong;
+    font-size: 1.2rem;
+}
+
+@media(max-width:750px){
+    .signUpForm{
+       width: 100%;
+       padding: 2rem;
+    }
+}
+.form-label,
+.form-text,
+.form-check-label{
+    color: white!important;
+}
+.form-control{
+    background-color:#497a7b!important;
+    box-shadow: none!important;
+    outline: none!important;
+    border: 1px solid  #F8C660!important;
+}
+.dropdown-item{
+    cursor: pointer;
+}
+#timer{
+    /* border: 1px solid red; */
+    font-family: cursive;
+    display: inline-block;
+    width: 5rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+#exampleInputPassword::placeholder,
+#exampleInputName::placeholder,
+#exampleInputEmail::placeholder,
+.form-control::placeholder,
+#password::placeholder {
+    color: white!important; 
+    opacity: 0.7;
+    font-size: 1rem;
+}
+#exampleInputName,
+#exampleInputEmail,
+#exampleInputPassword,
+.form-control{
+    color: white!important; 
+}
+#exampleCheck1{
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #F8C660; ;
+}
+#registerBtn,
+#startQuiz{
+    width: 100%;
+    background-color: #F8C660;
+    box-shadow: none!important;
+    border: none!important;
+    outline: none!important;
+    font-family: cursive;
+    font-size: 1.3rem;
+}
+#registerBtn:hover{
+   border: 1px solid purple!important;
+}
+#redirectToSignIn{
+    /* border: 1px solid red; */
+    transform: translateY(11px);
+    display: block;
+    color: white; 
+}
+
+#redirectToSignIn{
+    /* border: 1px solid red; */
+    transform: translateY(11px);
+    display: block;
+    color: white; 
+
+}
+#redirectToSignIn span{
+    color: #F8C660; 
+    cursor: pointer;
+}
+.form-check-label,
+.form-check-input{
+    cursor: pointer;
+}
+.card{
+    transform: translateY(9rem);
+}
+.optionContainer{
+    /* border: 1px solid red; */
+    transform: translateY(15rem);
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.form-check-label{
+    color: black!important;
+    margin-left: 0.5rem!important;
+    margin-bottom: auto!important;
+    margin-top: auto!important;
+}
+
+.form-check-input{
+    margin-left: 0.3rem!important;
+    width: 1.5em!important;
+    height: 1.5em!important;
+    margin-bottom: auto!important;
+    margin-top: auto!important;
+   
+}
+.form-check-input:checked[type=radio]{
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxISrMiOF-JH_Tc-VPjDlf6LHnJJbDN7Ln8lI3YoMWwA&s')!important;
+}
+
+.form-check{
+    border-radius: 1rem;
+    padding: 1rem 0rem;
+}
+.form-check:hover{
+   cursor: pointer;
+}
+#btnGrp button{
+   background-color: #004643;
+}
+
+@media(max-width:375px){
+    
+        
+}
+@media(max-width:576px){
+    .optionContainer{
+        transform: translateY(6rem);
+    }
+    .form-check{
+        padding: 0.5rem 0rem;
+    }
+    .form-check-label{
+        width: 80%;
+    }
+    .card{
+        transform: translateY(5rem);
+    }
+    #btnGrp button{
+        width: 40%;
+        height: 100%;
+    }
+    #btnGrp{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+    }
+    .card{
+        transform: translateY(7rem);
+    }
+    .optionContainer{
+        gap: 20px;
+        transform: translateY(8rem);
+        justify-content: flex-start;
+    }
+        
+}
+@media(max-width:770px){
+    .card{
+        transform: translateY(5rem);
+    }
+    .optionContainer{
+        gap: 25px;
+        transform: translateY(7rem);
+        justify-content: flex-start;
+    }
+    #btnGrp{
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        transform: translateY(-21px);
+    }
+    #btnGrp button{
+        width: 40%;
+    }
+    .timer{
+        font-size: 1.5rem;
+        text-align: end;
+        /* border: 1px solid red; */
+        transform: translateY(2rem);
+    }
+    #quizNameMention{
+        /* font-size: 22px; */
+       
+        margin-top: 1rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #perc{
+        font-size: 0.8rem;
+    }
+    #success{
+        font-size: 1.2rem;
+    }
+    .resultComment{
+        font-size: 0.8rem!important;
+        transform: translateY(10px);
+    }
+       
+}
+@media(min-width:771px){
+    .card{
+        transform: translateY(5rem);
+    }
+    .optionContainer{
+        gap: 25px;
+        transform: translateY(7rem);
+        justify-content: flex-start;
+    }
+    #btnGrp{
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        transform: translateY(15px);
+    }
+    #btnGrp button{
+        width: 40%;
+    }
+    .timer{
+        font-size: 1.5rem;
+        text-align: end;
+        transform: translateY(2rem);
+    }
+    
+    .optionPartOne,.optionPartTwo{
+       
+        display: flex;
+        justify-content: space-around;
+    }
+   
+}
+.greetings{
+    margin-top: 4rem;
+    /* color: rgb(52 , 11 , 183)!important; */
+    font-family:'Courier New', Courier, monospace;
+}
+.cardQuizOptions{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%!important;
+    margin-top: 1rem!important;
+    margin-bottom: 6rem!important;
+}
+.cardContainer{
+    margin-top: -6rem!important;
+}
+.joinBtn{
+    width: 100%;
+    background-color: transparent!important;
+    color: rgb(52 , 11 , 183)!important;
+    /* border: 1px solid rgb(52 , 11 , 183)!important; */
+    margin-top: 1rem;
+}
+.joinBtn:hover{
+    background-color: rgb(2, 2, 63)!important;
+    color: white!important;
+}
+.langHeading{
+    display: inline-block;
+    margin-left: 1rem;
+}
+#quizNameMention{
+    font-family: 'Courier New', Courier, monospace;
+}
+.card-body img{
+    width: 3rem;
+    height: 3rem;
+}
+
+/* START QUIZ  */
+.container-wrapper-quiz{
+    display: none;
+}
+.container-wrapper-quiz.quizStart{
+    display: block;
+}
+.container-wrapper-into.quizSelectorHide{
+    display: none;
+}
+.result-content{
+    border: 1px solid grey;
+    transform: translateY(2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    height: 20rem;
+    border-radius: 2rem;
+}
+#checkAnswers{
+    transform: translateY(4rem);
+    width: 100%!important;
+}
+@media(min-width:1000px){
+    #checkAnswers{
+        transform: translateY(4rem);
+    }
+    .sort{
+        font-size: 31px;
+    }
+    
+}
+#fail{
+    color: red;
+    transform: translateY(10px);
+    
+}
+#success{
+    color: green;
+    transform: translateY(10px);
+   
+}
+.resultComment{
+    font-size: 1rem;
+}
+#mentionQuiz{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropDownCustom{
+    display: flex;
+    justify-content: flex-end;
+    background-color: white!important;
+}
+.dropDownCustom button{
+    color: black;
+    background-color: transparent!important;
+    border: none!important;
+}
+
+.dropDownCustom button.show,
+.dropDownCustom button.dropdown-toggle{
+    color: black;
+}
+#quizLogo{
+    height: 70px;
+    width: 70px;
+}
+.dropDownResult{
+    padding-left: 2rem;
+}
+@media(min-width:991px){
+    #navbarNavDropdown{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .dropDownUL{
+        transform: translateX(-5rem);
+    }
+    
+}
+
+/* abc  */
+
+.tableContainer {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.h1 {
+    font-size: 2rem;
+}
+
+.table {
+    width: 100%;
+}
+
+/* Custom styles for screens below 500px */
+@media (max-width: 500px) {
+    .h1 {
+        font-size: 1.5rem;
+    }
+
+    .table {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .h1 {
+        font-size: 1rem!important;
+    }
+
+    .table {
+        font-size: 0.7rem;
+    }
+    tr{
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 384px) {
+    .table {
+        font-size: 0.5rem;
+    }
+    
+}
+@media (max-width: 306px) {
+    .table {
+        font-size: 0.4rem;
+    }
+  
+}
+.container-wrapper-into.bgBlack{
+    background-color:#434141;
+}
+.greetings.bgBlack{
+    color: white;
+}
+
+#darkTheme.white{
+    color: white;
+}
+
+
+
+
+
